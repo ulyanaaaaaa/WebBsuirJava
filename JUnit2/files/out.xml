@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<personXML>
+    <id>900</id>
+    <surname>Doe</surname>
+    <forename>John</forename>
+    <patronymic>Smith</patronymic>
+    <dob>2024-11-05</dob>
+    <sex>1</sex>
+    <passportSeries>AB</passportSeries>
+    <passportNumber>123456</passportNumber>
+    <city>Minsk</city>
+    <address>123 Main St</address>
+    <phoneHome>+375291234567</phoneHome>
+    <phoneMobile>+375441234567</phoneMobile>
+    <citizenship>Belarus</citizenship>
+    <dutyBound>0</dutyBound>
+</personXML>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      fx:controller="com.example.bd7.MainViewController" alignment="CENTER" spacing="10" style="-fx-font-family: 'Arial'; -fx-background-color: #f0f8ff;" prefWidth="800" prefHeight="600">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Добро пожаловать!" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <Button text="Просмотреть всех пользователей" onAction="#handleViewAllUsers" style="-fx-background-color: #87cefa; -fx-text-fill: white;"/>
+    <Button text="Изменить информацию" onAction="#handleUpdateInfo" style="-fx-background-color: #32cd32; -fx-text-fill: white;"/>
+    <Button text="Поиск пользователя" onAction="#handleSearchUser" style="-fx-background-color: #ffa07a; -fx-text-fill: white;"/>
+    <TableView fx:id="userTable" prefWidth="700" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="userIdColumn" text="ID" />
+            <TableColumn fx:id="loginColumn" text="Логин" />
+            <TableColumn fx:id="nameColumn" text="Имя" />
+            <TableColumn fx:id="surnameColumn" text="Фамилия" />
+        </columns>
+    </TableView>
+    <HBox spacing="10">
+        <Button text="Удалить свой аккаунт" onAction="#handleDeleteAccount" style="-fx-background-color: red; -fx-text-fill: white;"/>
+        <Button text="Выйти из аккаунта" onAction="#handleLogout" style="-fx-background-color: #87cefa; -fx-text-fill: white;"/>
+    </HBox>
+</VBox>

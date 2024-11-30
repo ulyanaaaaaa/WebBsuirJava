@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Checker</title>
+</head>
+<body>
+<h1>Проверка подстроки</h1>
+<form action="/api/string/contains" method="get">
+    <label for="mainString">Основная строка:</label>
+    <input type="text" id="mainString" name="mainString" required>
+    <br>
+    <label for="substring">Подстрока:</label>
+    <input type="text" id="substring" name="substring" required>
+    <br>
+    <button type="submit">Проверить</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    document.querySelector('form').onsubmit = async function(event) {
+        event.preventDefault();
+        const mainString = document.getElementById('mainString').value;
+        const substring = document.getElementById('substring').value;
+
+        const response = await fetch(`/api/string/contains?mainString=${encodeURIComponent(mainString)}&substring=${encodeURIComponent(substring)}`);
+        const result = await response.text();
+
+        document.getElementById('result').innerText = `Результат: ${result}`;
+    };
+</script>
+</body>
+</html>

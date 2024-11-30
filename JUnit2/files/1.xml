@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<personXML>
+    <qtype>CREATE</qtype>
+    <id>900</id>
+    <surname>Макарова</surname>
+    <forename>Ульяна</forename>
+    <patronymic>Георгиевна</patronymic>
+    <dob>2001-12-01</dob>
+    <sex>0</sex>
+    <passportSeries>AA</passportSeries>
+    <passportNumber>2643215</passportNumber>
+    <city>г. Орша</city>
+    <address>ул. Семенова 8</address>
+    <phoneHome>+375(29)8805351</phoneHome>
+    <citizenship>РБ</citizenship>
+    <dutyBound>1</dutyBound>
+</personXML>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="https://www.w3schools.com"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="personXML" type="w3s:personXMLType" xmlns:w3s="https://www.w3schools.com"/>
+    <xs:complexType name="personXMLType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="qtype" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="CREATE"/>
+                        <xs:enumeration value="READ"/>
+                        <xs:enumeration value="UPDATE"/>
+                        <xs:enumeration value="DELETE"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:string" name="id"/>
+            <xs:element type="xs:string" name="surname" minOccurs="0"/>
+            <xs:element type="xs:string" name="forename" minOccurs="0"/>
+            <xs:element type="xs:string" name="patronymic" minOccurs="0"/>
+            <xs:element type="xs:date" name="dob" minOccurs="0"/>
+            <xs:element type="xs:int" name="sex" minOccurs="0"/>
+            <xs:element type="xs:string" name="passportSeries" minOccurs="0"/>
+            <xs:element type="xs:string" name="passportNumber" minOccurs="0"/>
+            <xs:element type="xs:string" name="city" minOccurs="0"/>
+            <xs:element type="xs:string" name="address" minOccurs="0"/>
+            <xs:element type="xs:string" name="phoneHome" minOccurs="0"/>
+            <xs:element type="xs:string" name="citizenship" minOccurs="0"/>
+            <xs:element type="xs:int" name="dutyBound" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

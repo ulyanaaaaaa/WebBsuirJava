@@ -1,0 +1,16 @@
+{
+  "id": "900",
+  "surname": "Некрасов",
+  "forename": "Марк",
+  "patronymic": "Николаевич",
+  "dob": "янв 11, 1999",
+  "sex": 1,
+  "passportSeries": "ВМ",
+  "passportNumber": "1113455",
+  "city": "г. Барановичи",
+  "address": "пр-т Дзержинского 38",
+  "phoneHome": "+375330876788",
+  "phoneMobile": "+375449990877",
+  "citizenship": "Республика Беларусь",
+  "dutyBound": 1
+}
